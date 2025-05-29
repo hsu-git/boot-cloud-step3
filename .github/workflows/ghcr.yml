@@ -68,7 +68,7 @@ jobs:
         if: always() # Send notification regardless of build success or failure
         uses: act10ns/slack@v2.1.0
         with:
-          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }} # Replace with your Slack webhook URL secret
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }} # Replace with your Slack webhook URL secret
           status: ${{ job.status }}
           message: |
             *GitHub Actions Workflow Status:*
